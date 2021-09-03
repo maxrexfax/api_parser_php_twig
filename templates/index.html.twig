@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>PHP api json parser</title>
+    {% include 'header.html' %}
+
+    <style>
+        body {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="row">
+    <div class="col-6 col-md-8 col-lg-6 offset-2 offset-md-2 offset-lg-4">
+        <form method="GET" action="index.php">
+            <div class="form-group">
+                <label for="post_index">Postal code</label>
+                <input type="text" class="form-control" value="14410" id="post_index" name="post_index" placeholder="Enter postal">
+                <small id="postalHelp" class="form-text text-muted">Find info by post code</small>
+            </div>
+            <button type="submit" id="find_by_postal" class="btn btn-primary">Find</button>
+        </form>
+    </div>
+</div>
+</body>
+
+</html>
